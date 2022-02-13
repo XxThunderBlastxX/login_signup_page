@@ -20,7 +20,11 @@ class MyApp extends StatelessWidget {
         primaryColor: kPrimaryColor,
         accentColor: kPrimaryLightColor,
       ),
-      home: const LoginPage(),
+      // home: const LoginPage(),
+      initialRoute: '/login',
+      routes: {
+        LoginPage.routeName: (context) => const LoginPage(),
+      },
     );
   }
 }
