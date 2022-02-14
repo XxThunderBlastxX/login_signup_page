@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './widgets/signup_body.dart';
+
 class SignUpPage extends StatelessWidget {
   //Route Name
   static const routeName = '/signup';
@@ -8,9 +10,10 @@ class SignUpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        color: Colors.blue,
-        child: Text('sign up Page'),
+      body: Body(
+        child: Column(
+          children: [],
+        ),
       ),
     );
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:login_ui/constants/constants.dart';
 import 'package:login_ui/pages/Login/widgets/login_bg.dart';
 import 'package:login_ui/pages/SignUp/SignUp.dart';
 import 'package:login_ui/widgets/roundedButton.dart';
@@ -24,6 +25,7 @@ class LoginBody extends StatelessWidget {
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 18,
+                color: kPrimaryColor,
               ),
             ),
             SizedBox(
