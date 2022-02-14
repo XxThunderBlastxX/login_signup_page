@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_ui/pages/SignUp/SignUp.dart';
 
 import './constants/constants.dart';
 import 'pages/Login/login.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/login',
       routes: {
         LoginPage.routeName: (context) => const LoginPage(),
+        SignUpPage.routeName: (context) => const SignUpPage(),
       },
     );
   }

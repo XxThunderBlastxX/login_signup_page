@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:login_ui/pages/Login/widgets/login_bg.dart';
+import 'package:login_ui/pages/SignUp/SignUp.dart';
 import 'package:login_ui/widgets/roundedButton.dart';
 
 import '../../../widgets/alreadyHaveAnAccountCheck.dart';
@@ -48,12 +49,13 @@ class LoginBody extends StatelessWidget {
               press: () {},
             ),
             SizedBox(
-              height: size.height * 0.022,
+              height: size.height * 0.001,
             ),
             AlreadyHaveAnAccountCheck(
-              press: () {},
+              press: () =>
+                  Navigator.of(context).pushNamed(SignUpPage.routeName),
               login: true,
-            )
+            ),
           ],
         ),
       ),
